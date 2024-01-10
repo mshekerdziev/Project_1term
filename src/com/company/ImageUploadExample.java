@@ -73,7 +73,7 @@ public class ImageUploadExample extends JFrame implements ActionListener{
        int option = fileChooser.showOpenDialog(this);
        if(option == JFileChooser.APPROVE_OPTION){
           File file = fileChooser.getSelectedFile();
-          label.setText("File Selected: " + file.getName());
+          label.setText("File Selected:  " + file.getName());
           try {               
                Path resourceDirectory = Paths.get("src","resources");
                String absolutePath = resourceDirectory.toFile().getAbsolutePath();
